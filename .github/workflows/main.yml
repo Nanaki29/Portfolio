@@ -17,6 +17,6 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftp.cluster029.hosting.ovh.net
-          server-dir: www
+          server-dir: ./www/
           username: tkpripq
           password: ${{ secrets.FTP_PASSWORD }}
