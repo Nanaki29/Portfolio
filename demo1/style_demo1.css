@@ -1,0 +1,465 @@
+@font-face {
+	font-family: 'darling';
+	src: url('Darling.ttf');
+}
+
+body {
+	margin: 0;
+	font-family: "verdana", sans-serif;
+	text-align: justify;
+	font-size: 1.2em;
+	color: black;
+	overflow-x: hidden;
+	min-width: 530px;
+}
+
+h1 {
+	font-family: darling , "Comic sans ms" , sans-serif;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 0 10px 20px 10px;
+}
+
+h2 {
+	font-family: "Comic sans ms" , sans-serif;
+	color: #7660AB;
+	font-size: 2.3em;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "Comic sans ms" , sans-serif;
+	color: #7660AB;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: "Comic sans ms" , sans-serif;
+	color: #7660AB;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin : 3px;
+}
+
+.nav_head {
+	text-shadow: 2px 2px 1px #ffffff;
+}
+
+#photo {
+	height: 160px;
+	border: solid 3px #000000;
+	border-radius: 100%;
+	margin: 20px 10px;
+	box-shadow: 7px 7px 10px black;
+}
+
+
+
+#bandeau {
+	font-family: "Comic sans ms" , sans-serif;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	background-color: #B7ABDB;		
+	height: 100%;
+	width: 230px;
+	text-align: center;
+	font-size: 1.2em;
+	border-right: solid 2px #000000;
+}
+
+
+#bandeau footer ul li {
+	display: inline-block;
+	text-align: center;
+
+}
+
+
+#bandeau footer ul li a {
+	text-decoration: none;
+	color: black;
+	margin: 2px;
+	font-size: 0.95em;
+}	
+
+#bandeau footer ul li a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.bandeau_nav footer ul {
+	padding: 0;
+	
+}
+
+#bandeau nav ul {
+	list-style-type: none;
+	padding: 0px;
+}		
+
+#bandeau nav li {
+	padding: 5px;
+	border-bottom: solid 2px rgba(117,96,145,25%);
+}
+
+#bandeau li:last-child {
+	border-bottom: none;
+}	
+
+#bandeau nav ul li a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+
+#bandeau nav a:hover {
+	background-color: white;
+	color: #7660AB;
+}
+
+
+.site section  {
+	border-bottom: solid 6px rgba(161,165,230,20%);
+}
+
+.site section:last-child {
+	border-bottom: none;
+}
+
+#banner {
+	position: relative;
+	max-width: 100%;
+	margin-left: 230px;
+	z-index: -1;
+	border-bottom: solid 2px #000000;
+	float: right;
+}
+
+.column div {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px;
+	margin: 0px;
+}
+
+.column div p {
+	padding: 0 30px 20px 0;
+}
+
+.textarticlephoto div p {
+	margin: 10px 40px 40px 10px;
+}
+
+
+.articlephoto {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0px 20px 0px;
+}
+
+.articlephoto {
+	border-bottom: solid 4px rgba(161,165,230,20%)
+}
+
+.articlephoto:last-child {
+	border-bottom: none;
+}
+
+.textarticlephoto {
+	padding-left: 40px;
+}
+
+.articlephoto img {
+	width: 300px;
+	border-radius: 10px;
+	box-shadow: 7px 7px 10px black;
+}
+
+.sitebanner 	{
+	text-align: justify;
+}
+
+.site {
+	min-width: 500px;
+	padding : 3% 7%;
+	margin-left: 230px;
+	z-index: -2;
+	clear: both;
+}
+
+#mail {
+	height: 58px;
+	float: left;
+	margin: 0 30px 30px 0;
+}
+
+#containercontact fieldset {
+	border-radius: 10px;
+	border: solid 2px #B7ABDB;
+}
+
+
+#containercontact fieldset legend {
+	color: #7660AB;
+	font-weight: bold;
+	font-family: "Comic sans ms" , sans-serif;
+	font-size: 1.2em;
+}
+
+#containercontact fieldset, #containercontact legend {
+	margin-bottom: 5px;
+}
+
+#containercontact {
+	width: 100%;
+	clear: both;
+	padding: 0;
+}
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+}
+
+.formcontact, .coldemi, .bouton {
+	margin: 0 0 10px 0;
+}
+
+fieldset div {
+	display: flex;
+}
+
+.nom input {
+	width: 100%;
+}
+
+.nom {
+	justify-content: space-between;
+}
+
+.formcontact {
+	width: 100%;
+}
+
+.bouton {
+	with: 10%;
+	color: black;
+	font-family: "Comic sans ms" , sans-serif;
+	font-size: 1em;
+	background-color: #B7ABDB ;
+	border-radius: 10px;
+	border: solid 2px black;
+	margin: 4px 3px;
+}
+
+.coldemi, .formcontact {
+	border-radius: 5px;
+	border: solid 2px darkgrey;
+	margin: 4px 3px;
+}
+
+
+@media screen and (max-width: 1280px)
+{
+
+	body {
+		font-size: 1.1em;
+	}
+
+	h1 {
+		font-size: 1.5em;
+		margin-bottom: 0;
+	}
+
+	.nav_head {
+		margin-top: 15px;
+		color: #ffffff;
+		font-size: 1.3em;
+		text-align: left;
+		text-shadow: 2px 2px 1px #000000;
+	}
+
+
+	.site {
+		margin: auto;
+
+	}
+
+	#sitebanner {
+		margin-top: -200px;
+	}
+
+	#banner {
+		min-width: 1280px;
+		margin-left: 0;
+		top : -50px;
+		border-bottom: none;
+
+	}
+
+	#bandeau nav li {
+		border-bottom: none;
+	}
+
+	header #photo {
+		margin: 30px;
+	}
+
+	.articlephoto {
+
+		justify-content: space-between;
+		padding: 20px 0px 20px 0px;
+	}
+
+	.articlephoto img {
+		width: 200px;
+	}
+
+	.bandeau_nav {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		border-top: solid 2px #000000;
+		border-bottom: solid 2px #000000;
+	}
+
+	.bandeau_nav nav {
+		flex-grow: 1;
+		margin: auto;
+		margin-left: ;
+	}
+
+	#bandeau nav ul li a{
+		min-width: 131px;
+	}
+
+	.bandeau_nav footer a {
+		margin: auto 5px;
+	}
+
+
+
+	.bandeau_nav footer {
+		margin: 0 10px;
+	}
+
+	.bandeau_nav {
+		background-color: #B7ABDB;
+	}
+
+	#bandeau {
+		color: #ffffff;
+		min-width: 600px;
+		background-size: 100%;
+		position: initial;
+		display: inline;
+		font-family: "Comic sans ms" , sans-serif;
+		background-color: transparent;		
+		width: 100%;
+		border-right: none;
+	}
+
+	#bandeau nav ul {
+		list-style: none;
+		color: white;
+		justify-content: space-between;
+		padding: 0;
+		margin: 0;
+	}
+
+	#bandeau nav ul li {
+		position: relative;
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	#bandeau header {
+		display: flex;
+		color: #ffffff;
+		font-size: 0.8em;
+	}
+	
+	#bandeau header img {
+		width: 100px;
+		height: 100px;
+	}
+
+	
+
+	
+}
+
+@media screen and (max-width: 975px) {
+
+	body {
+		font-size: 1.05em;
+	}
+
+	#banner {
+		top: 20px;
+	}
+
+	.bandeau_nav {
+		flex-direction: column;
+	}
+
+	#bandeau header img {
+		width: 80px;
+		height: 80px;
+		margin: 20px;
+	}
+
+	.bandeau_nav {
+		top: 17px;
+	}
+
+	#bandeau nav ul li a {
+		padding: 5px;
+		min-width: 100px;
+		margin: 3px;
+	}
+
+	#bandeau footer ul {
+		position: absolute;
+		top: -45px;
+		right: 15px;
+		margin: 5px 0 10px 0;
+	}
+	
+	#bandeau footer ul li a {
+		color: #B7ABDB;
+	}
+	
+
+	.site {
+		clear: both;
+	}
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+	body {
+		font-size: 1em;
+	}
+
+	#banner {
+		top: 20px;
+	}
+
+	
+
+
+
+}
+
+
+

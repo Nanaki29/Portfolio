@@ -1,0 +1,189 @@
+@font-face {
+	font-family: 'Galgony';
+	src: url('font/Galgony.ttf');
+}
+
+@font-face {
+	font-family: "Bride";
+	src: url('font/Bride.otf');
+	src: url('font/Bride.ttf');
+}
+
+
+body {
+	min-width: 610px;
+	overflow-x: clip;
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat,sans-serif;
+	font-size: 22px;
+	background-image: linear-gradient(to right, rgba(227, 227, 227, 1.0), rgba(225, 227, 227, 1.0)20%,rgba(223, 223, 221, 1.0)50%, rgba(216, 216, 214, 1.0)75%, rgb(213, 213, 211)100%);
+	}
+
+h2,
+h3 {
+	font-style: Bride;
+	color: #000000;
+	text-shadow: 2px 2px 2px #ffffff;
+}
+
+
+h1 {
+	font-family: "Bride";
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 70px;
+
+}
+
+h2 {
+	font-family: "Galgony";
+	font-weight: normal;
+	margin: 40px 0 20px 0;
+	font-size: 43px;
+	padding: 0;
+}
+
+h3 {
+	font-family: "Galgony";
+	font-weight: normal;
+	margin: 40px 0 20px 0;
+	font-size: 35px;
+}
+
+article {
+	margin-bottom: 60px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.menu {
+	display: flex;
+	background-color: #288570;/*#F0A38A*/
+	color: #ffffff;
+	position: fixed;
+	text-align: right;
+	width: 70%;
+	padding: 0 15%;
+	margin: 0;
+	border-bottom: 3px solid #000000;
+	text-shadow: 3px 3px 3px #000000;
+}
+
+.menu nav {
+	background-color: #288570;
+	padding: 10px 0;
+	flex-grow: 1;
+
+}
+
+
+.menu nav ul {
+	margin: 0;
+}
+
+.menu nav li {
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Galgony";
+	font-weight: bold;
+	padding: 20px 15px;
+	font-size: 30px;
+}
+
+.menu nav li a {
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 50px;
+}
+
+.menu nav ul li a:hover {
+	color: #000000;
+	text-shadow: 3px 3px 3px #ffffff;
+}
+
+
+.fond {
+	background-image: url('fond_index.jpg');
+	background-repeat: no-repeat;
+	position: absolute;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center 80px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	}
+
+
+.page_pf,
+.page_contact {
+	margin: 0 15%;
+	padding-top : 200px;
+	}
+
+
+.demo {
+	text-align: justify;
+}
+
+.demo .demo_img img {
+	width: 300px;
+	border: 2px solid #000000;
+	border-radius: 20px;
+}
+
+.demo .demo_img_txt {
+	display: flex;
+}
+
+.demo .demo_txt p {
+	padding-left: 20px;
+	margin: 0;
+}
+
+.coordonnees li {
+	margin-top: 20px;
+	list-style: none;
+}
+
+td {
+	font-size: 22px;
+	padding: 7px 5px;
+
+}
+
+.icone_contact {
+	text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+	
+	body,
+	td {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+
+	h3 {
+		font-size: 32px;
+	}
+
+	.menu {
+	width: 90%;
+	min-width: 600px;
+	padding: 0 5%;
+	}
+
+	.page_pf,
+	.page_contact {
+		margin: 0 8%;
+		padding-top: 150px;
+	}
+}

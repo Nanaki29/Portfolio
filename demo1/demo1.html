@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style_demo1.css" />
+    <link rel="icon" href="voyage.png">
+    <title>En voyage avec Sarah</title>
+    <script src="https://kit.fontawesome.com/a9c1123218.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="blocpage">
+
+
+        <section id="bandeau">
+            <header>
+                <img id="photo" src="photo.png" alt="photo"/>
+                <div class="nav_head">
+                    <div><h1>En voyage avec Sarah</h1></div>
+                    <div>Tour du monde en sac à dos</div>
+                </div>
+            </header>
+
+            <div class="bandeau_nav">    
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Présentation</a></li>
+                        <li><a href="#titre2">Objectifs</a></li>
+                        <li><a href="#titre3">Destinations</a></li>
+                        <li><a href="#contact">Me contacter</a></li>    
+                    </ul>
+                </nav>
+
+                <footer>
+                    <ul>
+                        <li><a href="facebook" title="Aller sur facebook" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                        <li><a href="instagram" title="Aller sur instagram" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                        <li><a href="whatsapp" title="Aller sur whatsapp" target="_blank"><i class="fa-brands fa-whatsapp fa-xl"></i></a></li>
+                        <li><a href="twitter" title="Aller sur twitter" target="_blank"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                        <li><a href="youtube" title="Aller sur youtube" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                    </ul>
+                </footer>
+            </div>
+        </section>
+
+        <div id="sitebanner">
+            <img id="banner" src="banner.jpg" alt=banner>
+
+            <div class="site">
+                <section id="intro">
+                    <h2>Présentation</h2>
+
+                    <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p><br />
+                </section>
+
+
+                <section  id="titre2" class="column">
+                    <h3>Objectifs</h3>
+                    <div><p><i class="fa-solid fa-bed fa-2x"></i> Faucibus sed lobortis</p>
+                        <p><i class="fa-solid fa-map-location fa-2x"></i> Faucibus sed lobortis</p>
+                        <p><i class="fa-solid fa-kitchen-set fa-2x"></i></i> Faucibus sed lobortis</p>
+                    </div>
+                    <div><p><i class="fa-solid fa-mountain fa-2x"></i> Faucibus sed lobortis</p>
+                        <p><i class="fa-solid fa-earth-europe fa-2x"></i> Faucibus sed lobortis</p>
+                        <p><i class="fa-solid fa-paw fa-2x"></i> Faucibus sed lobortis</p>
+                    </div>
+                </section>
+
+
+                <section id="titre3" >
+                    <div class="introarticlephoto">
+                        <h3>Destinations</h3>
+                        <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus.</p>
+
+                        <p>Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+                    </div>
+                    
+                    <article class="articlephoto">
+
+                        <a href="cascade"><img src="article1.jpeg" alt=casacade></a>
+                        <div class="textarticlephoto">
+                            <h4>Sous titre 1</h4>
+                            <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus.</p>
+                        </div>
+                        
+                    </article>    
+
+                    <article class="articlephoto">
+                        <a href="désert"><img src="article2.jpeg" alt=désert></a>
+                        <div class="textarticlephoto">
+                            <h4>Sous titre 2</h4>
+                            <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus.</p>
+                        </div>
+                    </article>
+
+                    <article class="articlephoto">
+
+
+                        <a href="montage"><img src="article3.jpeg" alt=montagne></a>
+                        <div class="textarticlephoto">
+                            <h4>Sous titre 3</h4>
+                            <p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus.</p>
+                        </div>
+                        
+                    </article>
+                </section>
+
+
+                <section id="contact">
+                    <h3>Me contacter</h3>
+                    <img id="mail" src="envelope_icon.png" alt="email">
+                    <p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
+                    <div id="containercontact">
+
+
+                        <form method="post" action="traitement.php">
+
+                            <fieldset>
+                                <legend>Qui es-tu ?</legend>
+                                <div class="nom">
+
+                                    <input class="coldemi" type="text" name="Prénom" placeholder="Prénom/pseudo" required />
+                                    <select class="coldemi" name="pays" id="pays">
+                                       <optgroup label="Europe">
+                                         <option value="france">France</option>
+                                         <option value="espagne">Espagne</option>
+                                         <option value="italie">Italie</option>
+                                         <option value="royaume-uni">Royaume-Uni</option>
+                                     </optgroup>
+                                     <optgroup label="Amérique">
+                                         <option value="canada">Canada</option>
+                                         <option value="etats-unis">Etats-Unis</option>
+                                         <option value="perou">Pérou</option>
+                                         <option value="mexique">Mexique</option>
+                                         <option value="bresil">Brésil</option>
+                                     </optgroup>
+                                     <optgroup label="Asie">
+                                         <option value="chine">Chine</option>
+                                         <option value="japon">Japon</option>
+                                         <option value="inde">Inde</option>
+                                     </optgroup>                                      
+                                 </select>
+                             </div>
+
+                             <div>         
+                                <input class="formcontact" type="email" name="Email" placeholder="Email" required /></div>
+
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Ton message</legend>
+                                <div>
+                                    <input class="formcontact" type="text" name="Subject" placeholder="Sujet" required />
+                                </div>
+                                <div>
+                                    <textarea class="formcontact" name="message" placeholder="Laisse moi ton message, ici." rows="10" required></textarea></div>
+
+                                    <div>
+                                        <input class="bouton" type="submit" value="Envoyer le message" />
+                                        <input class="bouton" type="reset" value="Remise à zéro" />
+                                    </div>
+                                </fieldset>   
+                            </form>
+                        </div>   
+
+                    </section>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+    </html>
