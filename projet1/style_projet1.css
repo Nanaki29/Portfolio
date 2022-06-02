@@ -248,7 +248,6 @@ fieldset div {
 }
 
 .bouton {
-	with: 10%;
 	color: black;
 	font-family: "Comic sans ms" , sans-serif;
 	font-size: 1em;
@@ -332,7 +331,6 @@ fieldset div {
 	.bandeau_nav nav {
 		flex-grow: 1;
 		margin: auto;
-		margin-left: ;
 	}
 
 	#bandeau nav ul li a{

@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "Galgony";
+  src: url("../font/Galgony.ttf");
+}
+@font-face {
+  font-family: "Bride";
+  src: url("../font/Bride.otf");
+  src: url("../font/Bride.ttf");
+}
+body {
+  min-width: 610px;
+  overflow-x: clip;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to right, rgb(227, 227, 227), rgb(225, 227, 227) 20%, rgb(223, 223, 221) 50%, rgb(216, 216, 214) 75%, rgb(213, 213, 211) 100%);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 40px 0 20px 0;
+  padding: 0;
+}
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  margin: 40px 0 20px 0;
+}
+@media screen and (max-width: 850px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+h2,
+h3 {
+  color: #000;
+  text-shadow: 2px 2px 2px #ffffff;
+}
+
+.page-background {
+  background-image: url("../img/main-background.jpg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center 80px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.main-page,
+.contact-page {
+  margin: 0 15%;
+  padding-top: 200px;
+}
+@media screen and (max-width: 850px) {
+  .main-page,
+.contact-page {
+    margin: 0 8%;
+    padding-top: 150px;
+  }
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+}
+@media screen and (max-width: 850px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+h2,
+h3 {
+  font-family: "Galgony";
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Bride";
+  font-weight: normal;
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 43px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+.nav {
+  display: flex;
+  background-color: #288570;
+  color: #ffffff;
+  position: fixed;
+  text-align: right;
+  width: 70%;
+  padding: 0 15%;
+  margin: 0;
+  border-bottom: 3px solid #000000;
+  text-shadow: 3px 3px 3px #000000;
+}
+@media screen and (max-width: 850px) {
+  .nav {
+    width: 90%;
+    min-width: 600px;
+    padding: 0 5%;
+  }
+}
+.nav nav {
+  background-color: #288570;
+  padding: 10px 0;
+  flex-grow: 1;
+}
+.nav ul {
+  margin: 0;
+}
+.nav li {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Galgony";
+  font-weight: bold;
+  padding: 20px 15px;
+  font-size: 30px;
+}
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 50px;
+}
+.nav a:hover {
+  color: #000000;
+  text-shadow: 3px 3px 3px #ffffff;
+}
+
+.projet {
+  text-align: justify;
+  margin-bottom: 60px;
+}
+.projet__img {
+  width: 300px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+.projet__bloc {
+  display: flex;
+}
+.projet__texte p {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.contact li {
+  margin-top: 20px;
+  list-style: none;
+}
+.contact td {
+  font-size: 22px;
+  padding: 7px 5px;
+}
+@media screen and (max-width: 850px) {
+  .contact td {
+    font-size: 20px;
+  }
+}
+.contact__icon {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

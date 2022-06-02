@@ -1,0 +1,32 @@
+body {
+	font-family: Montserrat,sans-serif;
+	font-size: 22px;
+    @media screen and (max-width: 850px) {
+        font-size: 20px;
+        }
+	}
+
+.italic {
+	font-style: italic;
+}
+
+h2,
+h3 {
+    font-family: "Galgony";
+	font-weight: normal;
+}
+
+h1 {
+	font-family: "Bride";
+	font-weight: normal;
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 43px;
+}
+
+h3 {
+	font-size: 35px;
+}
+

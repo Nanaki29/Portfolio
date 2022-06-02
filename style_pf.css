@@ -52,17 +52,23 @@ h3 {
 	font-size: 35px;
 }
 
-article {
+
+.projet {
 	margin-bottom: 60px;
 }
+
+
+
+
+
 
 .italic {
 	font-style: italic;
 }
 
-.menu {
+.nav {
 	display: flex;
-	background-color: #288570;/*#F0A38A*/
+	background-color: #288570;
 	color: #ffffff;
 	position: fixed;
 	text-align: right;
@@ -73,7 +79,7 @@ article {
 	text-shadow: 3px 3px 3px #000000;
 }
 
-.menu nav {
+.nav nav {
 	background-color: #288570;
 	padding: 10px 0;
 	flex-grow: 1;
@@ -81,11 +87,11 @@ article {
 }
 
 
-.menu nav ul {
+.nav nav ul {
 	margin: 0;
 }
 
-.menu nav li {
+.nav nav li {
 	display: inline-block;
 	text-decoration: none;
 	font-family: "Galgony";
@@ -94,20 +100,20 @@ article {
 	font-size: 30px;
 }
 
-.menu nav li a {
+.nav nav li a {
 	text-decoration: none;
 	color: #ffffff;
 	border-radius: 50px;
 }
 
-.menu nav ul li a:hover {
+.nav nav ul li a:hover {
 	color: #000000;
 	text-shadow: 3px 3px 3px #ffffff;
 }
 
 
-.fond {
-	background-image: url('fond_index.jpg');
+.page-background {
+	background-image: url('img/fond_index.jpg');
 	background-repeat: no-repeat;
 	position: absolute;
 	background-attachment: fixed;
@@ -119,55 +125,55 @@ article {
 	}
 
 
-.page_pf,
-.page_contact {
+.main-page,
+.contact-page {
 	margin: 0 15%;
 	padding-top : 200px;
 	}
 
 
-.demo {
+.projet {
 	text-align: justify;
 }
 
-.demo .demo_img img {
+.projet .projet__img {
 	width: 300px;
 	border: 2px solid #000000;
 	border-radius: 20px;
 }
 
-.demo .demo_img_txt {
+.projet .projet__bloc {
 	display: flex;
 }
 
-.demo .demo_txt p {
+.projet .projet__texte p {
 	padding-left: 20px;
 	margin: 0;
 }
 
-.coordonnees li {
+.contact li {
 	margin-top: 20px;
 	list-style: none;
 }
 
-td {
+.contact td {
 	font-size: 22px;
 	padding: 7px 5px;
 
 }
 
-.icone_contact {
+.contact__icon {
 	text-align: center;
 }
 
 @media screen and (max-width: 850px) {
 	
 	body,
-	td {
+	.contact td {
 		font-size: 20px;
 	}
 
-	h2 {
+h2 {
 		font-size: 40px;
 	}
 
@@ -175,14 +181,14 @@ td {
 		font-size: 32px;
 	}
 
-	.menu {
+	.nav {
 	width: 90%;
 	min-width: 600px;
-	padding: 0 5%;
+	padding: 0;
 	}
 
-	.page_pf,
-	.page_contact {
+	.main-page,
+	.contact-page {
 		margin: 0 8%;
 		padding-top: 150px;
 	}

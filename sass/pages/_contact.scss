@@ -1,0 +1,18 @@
+.contact {
+    & li {
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    & td {
+        font-size: 22px;
+        padding: 7px 5px;
+        @media screen and (max-width: 850px) {
+            font-size: 20px;
+	}
+    }
+
+    &__icon {
+        text-align: center;
+    }
+}
