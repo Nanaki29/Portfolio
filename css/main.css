@@ -42,7 +42,7 @@ h3 {
 h2,
 h3 {
   color: #000;
-  text-shadow: 2px 2px 2px #ffffff;
+  text-shadow: 3px 3px 4px white;
 }
 
 .page-background {
@@ -107,14 +107,12 @@ h3 {
 .nav {
   display: flex;
   background-color: #288570;
-  color: #ffffff;
   position: fixed;
   text-align: right;
   width: 70%;
   padding: 0 15%;
   margin: 0;
-  border-bottom: 3px solid #000000;
-  text-shadow: 3px 3px 3px #000000;
+  border-bottom: 3px solid #000;
 }
 @media screen and (max-width: 850px) {
   .nav {
@@ -122,6 +120,16 @@ h3 {
     min-width: 600px;
     padding: 0 5%;
   }
+}
+.nav__page-link a {
+  color: #fff;
+  text-shadow: 3px 3px 4px black;
+  text-decoration: none;
+}
+.nav__page-link a:hover {
+  color: #fff;
+  text-shadow: 3px 3px 4px black;
+  text-decoration: none;
 }
 .nav nav {
   background-color: #288570;
@@ -139,14 +147,14 @@ h3 {
   padding: 20px 15px;
   font-size: 30px;
 }
-.nav a {
+.nav__inline__link a {
   text-decoration: none;
-  color: #ffffff;
-  border-radius: 50px;
+  color: #fff;
+  text-shadow: 3px 3px 4px black;
 }
-.nav a:hover {
-  color: #000000;
-  text-shadow: 3px 3px 3px #ffffff;
+.nav__inline__link a:hover {
+  color: #000;
+  text-shadow: 3px 3px 4px white;
 }
 
 .projet {

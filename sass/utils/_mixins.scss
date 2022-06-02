@@ -1,0 +1,9 @@
+@mixin text-shadow($color:$color-font-primary, $size: $shadow-size) {
+    color: $color;
+    @if (lightness($color)<25%) {
+        $color: lighten($color,100%);
+    }@else{
+        $color: darken($color,100%)
+    }
+    text-shadow: $shadow-size $color;
+}

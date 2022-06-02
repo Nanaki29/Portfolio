@@ -29,8 +29,7 @@ h3 {
 
 h2,
 h3 {
-	color: $color-black;
-	text-shadow: 2px 2px 2px #ffffff;
+	@include text-shadow;
 }
 
 .page-background {

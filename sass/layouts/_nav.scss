@@ -1,19 +1,26 @@
 .nav {
 	display: flex;
-	background-color: #288570;
-	color: #ffffff;
+	background-color: $color-primary;
 	position: fixed;
 	text-align: right;
 	width: 70%;
 	padding: 0 15%;
 	margin: 0;
-	border-bottom: 3px solid $color-black;
-	text-shadow: 3px 3px 3px #000000;
+	border-bottom: 3px solid $color-font-primary;
     @media screen and (max-width: 850px) {
         width: 90%;
-	    min-width: 600px;
-	    padding: 0;
-	    }
+        min-width: 600px;
+        padding: 0 5%;
+      }
+    &__page-link a {
+        @include text-shadow($color-font-secondary);
+        text-decoration: none;
+     
+        &:hover {
+            @include text-shadow($color-font-secondary);
+            text-decoration: none;
+        }
+    }  
     & nav {
         background-color: #288570;
         padding: 10px 0;
@@ -32,14 +39,13 @@
         font-size: 30px;
         }
 
-                & a {
-                    text-decoration: none;
-                    color: #ffffff;
-                    border-radius: 50px;
-                }
+    &__inline__link a {
+        text-decoration: none;
+        @include text-shadow($color-font-secondary);
+                
 
-        & a:hover {
-            color: #000000;
-            text-shadow: 3px 3px 3px #ffffff;
+        &:hover {
+            @include text-shadow;
         }
+    }
 }
