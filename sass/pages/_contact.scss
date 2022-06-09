@@ -7,8 +7,8 @@
     & td {
         font-size: 22px;
         padding: 7px 5px;
-        @media screen and (max-width: 850px) {
-            font-size: 20px;
+        @media screen and (max-width: $media-min) {
+            @include font-size-media($font-size, $font-size-media-min);
 	}
     }
 

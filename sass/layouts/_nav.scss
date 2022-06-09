@@ -1,24 +1,21 @@
 .nav {
-	display: flex;
-	background-color: $color-primary;
-	position: fixed;
-	text-align: right;
-	width: 70%;
-	padding: 0 15%;
-	margin: 0;
-	border-bottom: 3px solid $color-font-primary;
-    @media screen and (max-width: 850px) {
-        width: 86%;
-        padding: 0 7%;
+    display: flex;
+    position: fixed;
+    text-align: right;
+    border-bottom: $nav-border-bottom;
+    background-color: $color-primary;
+    @include padding-width($padding-width-fullscreen);
+    @media screen and (max-width: $media-medium) {
+        @include padding-width($padding-width-media-min);
         min-width: $nav-min-width;
       }
     &__page-link a {
         @include text-shadow($color-font-secondary);
-        text-decoration: none;
+        text-decoration: $text-deco-none;
      
         &:hover {
             @include text-shadow($color-font-secondary);
-            text-decoration: none;
+            text-decoration: $text-deco-none;
         }
     }  
     & nav {
@@ -33,19 +30,19 @@
 
     & li {
         display: inline-block;
-        text-decoration: none;
-        font-family: $title2-font;
-        font-weight: bold;
         padding: 20px;
-        @include font-size($font-size, 1.4);
-        @media screen and (max-width: 850px) {
-            @include font-size($font-size, 1.2);
+        text-decoration: $text-deco-none;
+        font-family: $title2-font;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-nav;
+        @media screen and (max-width: $media-min) {
+            @include font-size-media($font-size-nav, $font-size-media-min);
         }
         }
 
     &__inline__link a {
         @include text-shadow($color-font-secondary);
-        text-decoration: none;
+        text-decoration: $text-deco-none;
 
         &:hover {
             @include text-shadow($color-font-primary);

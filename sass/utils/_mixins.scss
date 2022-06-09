@@ -8,7 +8,7 @@
     color: $color
 }
 
-@mixin font-size($size:$font-size, $variable:1) {
+@mixin font-size-media($font-size, $variable: 1) {
     font-size: $font-size*$variable;
 }
 
@@ -27,12 +27,22 @@
 
 
 /*Layout:*/
+@mixin padding-width($width)  {
+    width: $width;
+    padding: 0 calc((100% - $width) / 2);
+ }
+
+ @mixin margin-width($width)  {
+    width: $width;
+    margin: 0 calc((100% - $width) / 2);
+ }
+
+
 @mixin page-layout {
-    margin: 0 15%;
-    padding-top : 200px;
-        @media screen and (max-width: 850px) {
-            margin: 0 8%;
-            padding-top: 150px;
+    @include margin-width(70%);
+    padding-top : 15%;
+        @media screen and (max-width: $media-medium) {
+            @include margin-width(84%);
         } 
 }
 
@@ -44,6 +54,10 @@
 	background: $background
 }
 
+/*Nav:*/
+   
+
+/*Projet: */
 @mixin projet {
     .projet {    
         text-align: justify;
@@ -63,3 +77,6 @@
         }
     }
 }
+
+
+

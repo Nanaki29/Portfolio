@@ -3,20 +3,42 @@ $color-primary: #8c66a3;
 $color-font-primary: #000;
 $color-font-secondary: #fff;
 
+
 /*Text:*/
+/*Font:*/
 $normal-font: Montserrat, sans-serif;
 $title1-font: Bride, "Comic sans MS", sans-serif;
 $title2-font: Galgony, "Comic sans MS", sans-serif;
-
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+$font-style-italic: italic;
+$text-deco-none: none;
+/*Font-size:*/
 $shadow-size: 4px 4px 5px;
 $font-size: 22px;
+$font-size-nav: calc($font-size*1.4);
+$font-size-h1: calc($font-size*3.2);
+$font-size-h2: calc($font-size*2.4);
+$font-size-h3: calc($font-size*1.8);
+/*$font-size-XX*$font-size-XX*/
+$font-size-media-min: 0.84;
+
 
 /*Background:*/
 $background-img-work: url('../img/main-background.jpg');
 $background : linear-gradient(to right, rgba(227, 227, 227, 1.0), rgba(225, 227, 227, 1.0)20%,rgba(223, 223, 221, 1.0)50%, rgba(216, 216, 214, 1.0)75%, rgb(213, 213, 211)100%);
 
+
 /*Layout:*/
-$page-min-width: 580px;
-$nav-min-width: 500px;
-$Margin0 : 0;
-$Padding0 : 0;
+$page-min-width: 590px;
+$nav-min-width: 510px;
+/*Automatic padding:*/
+$padding-width-fullscreen: 70%;
+$padding-width-media-min: 86%;
+
+/*Media queries:*/
+$media-medium: 1300px;
+$media-min: 850px;
+
+/*Nav:*/
+$nav-border-bottom: 3px solid $color-font-primary;

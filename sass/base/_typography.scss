@@ -1,36 +1,36 @@
 body {
 	font-family: $normal-font;
-	@include font-size;
-    @media screen and (max-width: 850px) {
-        @include font-size($font-size, 0.9);
+	font-size: $font-size;
+			
+    @media screen and (max-width: $media-min) {
+        @include font-size-media($font-size, $font-size-media-min);
         }
 	}
-
 .italic {
-	font-style: italic;
+	font-style: $font-style-italic;
 }
 
 h2,
 h3 {
     font-family: $title2-font;
-	font-weight: normal;
+	font-weight: $font-weight-normal;
 }
 
 h1 {
 	font-family: $title1-font;
-	font-weight: normal;
-	@include font-size($font-size, 3.2);
+	font-weight: $font-weight-normal;
+	font-size: $font-size-h1;
 }
 
 h2 {
-	@include font-size($font-size, 2.2);
+	font-size: $font-size-h2;
 }
 
 h3 {
-	@include font-size($font-size, 2);
+	font-size: $font-size-h3;
 }
 
-@media screen and (max-width: 850px) {
-	h2{@include font-size($font-size, 2)}
-	h3{@include font-size($font-size, 1.4)}
+@media screen and (max-width: $media-min) {
+	h2{@include font-size-media($font-size-h2, $font-size-media-min)}
+	h3{@include font-size-media($font-size-h3, $font-size-media-min)}
 }

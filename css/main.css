@@ -1,10 +1,18 @@
 /*Colors:*/
 /*Text:*/
+/*Font:*/
+/*Font-size:*/
+/*$font-size-XX*$font-size-XX*/
 /*Background:*/
 /*Layout:*/
+/*Automatic padding:*/
+/*Media queries:*/
+/*Nav:*/
 /*Text:*/
 /*Background:*/
 /*Layout:*/
+/*Nav:*/
+/*Projet: */
 @font-face {
   font-family: "Galgony";
   src: url("../font/Galgony.ttf");
@@ -15,7 +23,7 @@
   src: url("../font/Bride.ttf");
 }
 body {
-  min-width: 580px;
+  min-width: 590px;
   overflow-x: clip;
   margin: 0;
   padding: 0;
@@ -48,14 +56,15 @@ h3 {
 
 .main-page,
 .contact-page {
+  width: 70%;
   margin: 0 15%;
-  padding-top: 200px;
+  padding-top: 15%;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1300px) {
   .main-page,
 .contact-page {
+    width: 84%;
     margin: 0 8%;
-    padding-top: 150px;
   }
 }
 
@@ -65,7 +74,7 @@ body {
 }
 @media screen and (max-width: 850px) {
   body {
-    font-size: 19.8px;
+    font-size: 18.48px;
   }
 }
 
@@ -86,37 +95,36 @@ h1 {
 }
 
 h2 {
-  font-size: 48.4px;
+  font-size: 52.8px;
 }
 
 h3 {
-  font-size: 44px;
+  font-size: 39.6px;
 }
 
 @media screen and (max-width: 850px) {
   h2 {
-    font-size: 44px;
+    font-size: 44.352px;
   }
 
   h3 {
-    font-size: 30.8px;
+    font-size: 33.264px;
   }
 }
 .nav {
   display: flex;
-  background-color: #8c66a3;
   position: fixed;
   text-align: right;
+  border-bottom: 3px solid #000;
+  background-color: #8c66a3;
   width: 70%;
   padding: 0 15%;
-  margin: 0;
-  border-bottom: 3px solid #000;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1300px) {
   .nav {
     width: 86%;
     padding: 0 7%;
-    min-width: 500px;
+    min-width: 510px;
   }
 }
 .nav__page-link a {
@@ -140,15 +148,15 @@ h3 {
 }
 .nav li {
   display: inline-block;
+  padding: 20px;
   text-decoration: none;
   font-family: Galgony, "Comic sans MS", sans-serif;
   font-weight: bold;
-  padding: 20px;
   font-size: 30.8px;
 }
 @media screen and (max-width: 850px) {
   .nav li {
-    font-size: 26.4px;
+    font-size: 25.872px;
   }
 }
 .nav__inline__link a {
@@ -188,7 +196,7 @@ h3 {
 }
 @media screen and (max-width: 850px) {
   .contact td {
-    font-size: 20px;
+    font-size: 18.48px;
   }
 }
 .contact__icon {

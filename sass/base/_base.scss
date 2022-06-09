@@ -9,7 +9,7 @@ h1 {
 h2,
 h3 {
 	margin: 40px 0 20px 0;
-	@include text-shadow();
+	@include text-shadow;
 	padding: 0;
 }
 
