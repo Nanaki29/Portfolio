@@ -1,15 +1,5 @@
 /*Colors:*/
 /*Text:*/
-/*$nav-text: (
-    normal: (
-        color: $color-font-secondary,
-        shadow: $color-font-primary,
-    ),
-    hover: (
-        color: $color-font-primary,
-        shadow: $color-font-secondary,
-    )
-);*/
 /*Background:*/
 /*Layout:*/
 /*Text:*/
@@ -173,7 +163,7 @@ h3 {
 
 .projet {
   text-align: justify;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .projet__img {
   width: 300px;

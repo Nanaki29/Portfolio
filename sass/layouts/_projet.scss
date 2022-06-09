@@ -1,17 +1,1 @@
-.projet {
-	text-align: justify;
-    margin-bottom: 60px;
-    &__img {
-        width: 300px;
-        border: 2px solid $color-font-primary;
-        border-radius: 20px;
-    }
-    &__bloc {
-        display: flex;
-    }
-
-    &__texte p {
-        padding-left: 20px;
-        margin: 0;
-    }
-}
+@include projet
