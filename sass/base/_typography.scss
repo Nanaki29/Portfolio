@@ -1,8 +1,8 @@
 body {
-	font-family: Montserrat,sans-serif;
-	font-size: 22px;
+	font-family: $normal-font;
+	@include font-size;
     @media screen and (max-width: 850px) {
-        font-size: 20px;
+        @include font-size($font-size, 0.9);
         }
 	}
 
@@ -12,21 +12,25 @@ body {
 
 h2,
 h3 {
-    font-family: "Galgony";
+    font-family: $title2-font;
 	font-weight: normal;
 }
 
 h1 {
-	font-family: "Bride";
+	font-family: $title1-font;
 	font-weight: normal;
-	font-size: 70px;
+	@include font-size($font-size, 3.2);
 }
 
 h2 {
-	font-size: 43px;
+	@include font-size($font-size, 2.2);
 }
 
 h3 {
-	font-size: 35px;
+	@include font-size($font-size, 2);
 }
 
+@media screen and (max-width: 850px) {
+	h2{@include font-size($font-size, 2)}
+	h3{@include font-size($font-size, 1.4)}
+}

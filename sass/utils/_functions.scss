@@ -1,0 +1,15 @@
+@function darken-shift($color) {
+    @if (lightness($color) < 70%){
+        @return darken($color, 20%);
+    }@else{
+        @return ($color);
+    }
+}
+
+@function shadow($color) {
+    @if (lightness($color)<50%) {
+        @return lighten($color,80%);
+    }@else{
+        @return darken($color,95%)
+    }
+}

@@ -1,3 +1,20 @@
+/*Colors:*/
+/*Text:*/
+/*$nav-text: (
+    normal: (
+        color: $color-font-secondary,
+        shadow: $color-font-primary,
+    ),
+    hover: (
+        color: $color-font-primary,
+        shadow: $color-font-secondary,
+    )
+);*/
+/*Background:*/
+/*Layout:*/
+/*Text:*/
+/*Background:*/
+/*Layout:*/
 @font-face {
   font-family: "Galgony";
   src: url("../font/Galgony.ttf");
@@ -8,41 +25,23 @@
   src: url("../font/Bride.ttf");
 }
 body {
-  min-width: 610px;
+  min-width: 580px;
   overflow-x: clip;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to right, rgb(227, 227, 227), rgb(225, 227, 227) 20%, rgb(223, 223, 221) 50%, rgb(216, 216, 214) 75%, rgb(213, 213, 211) 100%);
+  background: linear-gradient(to right, rgb(227, 227, 227), rgb(225, 227, 227) 20%, rgb(223, 223, 221) 50%, rgb(216, 216, 214) 75%, rgb(213, 213, 211) 100%);
 }
 
 h1 {
   margin: 0;
-  padding: 0;
-}
-
-h2 {
-  margin: 40px 0 20px 0;
-  padding: 0;
-}
-@media screen and (max-width: 850px) {
-  h2 {
-    font-size: 40px;
-  }
-}
-
-h3 {
-  margin: 40px 0 20px 0;
-}
-@media screen and (max-width: 850px) {
-  h3 {
-    font-size: 32px;
-  }
 }
 
 h2,
 h3 {
-  color: #000;
-  text-shadow: 3px 3px 4px white;
+  margin: 40px 0 20px 0;
+  color: #563d66;
+  text-shadow: 4px 4px 5px white;
+  padding: 0;
 }
 
 .page-background {
@@ -76,7 +75,7 @@ body {
 }
 @media screen and (max-width: 850px) {
   body {
-    font-size: 20px;
+    font-size: 19.8px;
   }
 }
 
@@ -86,27 +85,36 @@ body {
 
 h2,
 h3 {
-  font-family: "Galgony";
+  font-family: Galgony, "Comic sans MS", sans-serif;
   font-weight: normal;
 }
 
 h1 {
-  font-family: "Bride";
+  font-family: Bride, "Comic sans MS", sans-serif;
   font-weight: normal;
-  font-size: 70px;
+  font-size: 70.4px;
 }
 
 h2 {
-  font-size: 43px;
+  font-size: 48.4px;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 44px;
 }
 
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 30.8px;
+  }
+}
 .nav {
   display: flex;
-  background-color: #288570;
+  background-color: #8c66a3;
   position: fixed;
   text-align: right;
   width: 70%;
@@ -116,45 +124,51 @@ h3 {
 }
 @media screen and (max-width: 850px) {
   .nav {
-    width: 90%;
-    min-width: 600px;
-    padding: 0 5%;
+    width: 86%;
+    padding: 0 7%;
+    min-width: 500px;
   }
 }
 .nav__page-link a {
   color: #fff;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 4px 4px 5px #0d0d0d;
   text-decoration: none;
 }
 .nav__page-link a:hover {
   color: #fff;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 4px 4px 5px #0d0d0d;
   text-decoration: none;
 }
 .nav nav {
-  background-color: #288570;
+  background-color: #8c66a3;
   padding: 10px 0;
   flex-grow: 1;
 }
 .nav ul {
   margin: 0;
+  padding: 0;
 }
 .nav li {
   display: inline-block;
   text-decoration: none;
-  font-family: "Galgony";
+  font-family: Galgony, "Comic sans MS", sans-serif;
   font-weight: bold;
-  padding: 20px 15px;
-  font-size: 30px;
+  padding: 20px;
+  font-size: 30.8px;
+}
+@media screen and (max-width: 850px) {
+  .nav li {
+    font-size: 26.4px;
+  }
 }
 .nav__inline__link a {
-  text-decoration: none;
   color: #fff;
-  text-shadow: 3px 3px 4px black;
+  text-shadow: 4px 4px 5px #0d0d0d;
+  text-decoration: none;
 }
 .nav__inline__link a:hover {
   color: #000;
-  text-shadow: 3px 3px 4px white;
+  text-shadow: 4px 4px 5px #cccccc;
 }
 
 .projet {
@@ -163,7 +177,7 @@ h3 {
 }
 .projet__img {
   width: 300px;
-  border: 2px solid #000000;
+  border: 2px solid #000;
   border-radius: 20px;
 }
 .projet__bloc {

@@ -1,9 +1,46 @@
-@mixin text-shadow($color:$color-font-primary, $size: $shadow-size) {
+/*Text:*/ 
+@mixin text-shadow($color:darken-shift($color-primary), $size: $shadow-size) {
     color: $color;
-    @if (lightness($color)<25%) {
-        $color: lighten($color,100%);
-    }@else{
-        $color: darken($color,100%)
-    }
-    text-shadow: $shadow-size $color;
+    text-shadow: $shadow-size shadow($color);
 }
+
+@mixin titles-color($color:darken-shift($color-primary)) {
+    color: $color
+}
+
+@mixin font-size($size:$font-size, $variable:1) {
+    font-size: $font-size*$variable;
+}
+
+/*Background:*/
+@mixin background-image ($background-img: $background-img-work) {
+    background-image: $background-img;
+	background-repeat: no-repeat;
+	position: absolute;
+	background-attachment: fixed;
+	background-size: 100%;
+	background-position: center 80px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+
+/*Layout:*/
+@mixin page-layout {
+    margin: 0 15%;
+    padding-top : 200px;
+        @media screen and (max-width: 850px) {
+            margin: 0 8%;
+            padding-top: 150px;
+        } 
+}
+
+@mixin body-layout {
+    min-width: $page-min-width;
+	overflow-x: clip;
+	margin: 0;
+	padding: 0;
+	background: $background
+}
+

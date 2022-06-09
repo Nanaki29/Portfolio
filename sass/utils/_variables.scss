@@ -1,4 +1,31 @@
-$color-primary: #288570;
+/*Colors:*/
+$color-primary: #8c66a3;
 $color-font-primary: #000;
 $color-font-secondary: #fff;
-$shadow-size: 3px 3px 4px 
+
+/*Text:*/
+$normal-font: Montserrat, sans-serif;
+$title1-font: Bride, "Comic sans MS", sans-serif;
+$title2-font: Galgony, "Comic sans MS", sans-serif;
+
+$shadow-size: 4px 4px 5px;
+$font-size: 22px;
+
+/*$nav-text: (
+    normal: (
+        color: $color-font-secondary,
+        shadow: $color-font-primary,
+    ),
+    hover: (
+        color: $color-font-primary,
+        shadow: $color-font-secondary,
+    )
+);*/
+
+/*Background:*/
+$background-img-work: url('../img/main-background.jpg');
+$background : linear-gradient(to right, rgba(227, 227, 227, 1.0), rgba(225, 227, 227, 1.0)20%,rgba(223, 223, 221, 1.0)50%, rgba(216, 216, 214, 1.0)75%, rgb(213, 213, 211)100%);
+
+/*Layout:*/
+$page-min-width: 580px;
+$nav-min-width: 500px;

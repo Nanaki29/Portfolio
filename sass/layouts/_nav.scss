@@ -8,9 +8,9 @@
 	margin: 0;
 	border-bottom: 3px solid $color-font-primary;
     @media screen and (max-width: 850px) {
-        width: 90%;
-        min-width: 600px;
-        padding: 0 5%;
+        width: 86%;
+        padding: 0 7%;
+        min-width: $nav-min-width;
       }
     &__page-link a {
         @include text-shadow($color-font-secondary);
@@ -22,30 +22,33 @@
         }
     }  
     & nav {
-        background-color: #288570;
+        background-color: $color-primary;
         padding: 10px 0;
         flex-grow: 1;
     }
         & ul {
             margin: 0;
+            padding: 0;
         }
 
     & li {
         display: inline-block;
         text-decoration: none;
-        font-family: "Galgony";
+        font-family: $title2-font;
         font-weight: bold;
-        padding: 20px 15px;
-        font-size: 30px;
+        padding: 20px;
+        @include font-size($font-size, 1.4);
+        @media screen and (max-width: 850px) {
+            @include font-size($font-size, 1.2);
+        }
         }
 
     &__inline__link a {
-        text-decoration: none;
         @include text-shadow($color-font-secondary);
-                
+        text-decoration: none;
 
         &:hover {
-            @include text-shadow;
+            @include text-shadow($color-font-primary);
         }
     }
 }

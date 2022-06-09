@@ -1,55 +1,23 @@
 body {
-	min-width: 610px;
-	overflow-x: clip;
-	margin: 0;
-	padding: 0;
-	background-image: linear-gradient(to right, rgba(227, 227, 227, 1.0), rgba(225, 227, 227, 1.0)20%,rgba(223, 223, 221, 1.0)50%, rgba(216, 216, 214, 1.0)75%, rgb(213, 213, 211)100%);
-	}
+	@include body-layout;
+}
 
 h1 {
-    margin: 0;
-	padding: 0;
-    
-}
-
-h2 {
-    margin: 40px 0 20px 0;
-	padding: 0;
-    @media screen and (max-width: 850px) {
-		font-size: 40px;
-	}
-}
-
-h3 {
-    margin: 40px 0 20px 0;
-    @media screen and (max-width: 850px) {
-		font-size: 32px;
-	}
+	margin: 0;
 }
 
 h2,
 h3 {
-	@include text-shadow;
+	margin: 40px 0 20px 0;
+	@include text-shadow();
+	padding: 0;
 }
 
 .page-background {
-	background-image: url('../img/main-background.jpg');
-	background-repeat: no-repeat;
-	position: absolute;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-position: center 80px;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	}
+	@include background-image;
+}
 
 .main-page,
 .contact-page {
-	margin: 0 15%;
-	padding-top : 200px;
-    @media screen and (max-width: 850px) {
-		margin: 0 8%;
-		padding-top: 150px;
-	}
+	@include page-layout;
 }
