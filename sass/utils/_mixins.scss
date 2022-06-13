@@ -13,7 +13,7 @@
 }
 
 /*Background:*/
-@mixin background-image ($background-img: $background-img-work) {
+@mixin background-img ($background-img: $background-img-work) {
     background-image: $background-img;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -25,6 +25,9 @@
 	z-index: -1;
 }
 
+@mixin background-color {
+    background: $background;
+}
 
 /*Layout:*/
 @mixin padding-width($width)  {
@@ -51,7 +54,6 @@
 	overflow-x: clip;
 	margin: 0;
 	padding: 0;
-	background: $background;
 }
 
 /*Projet: */
