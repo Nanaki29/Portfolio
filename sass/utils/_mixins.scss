@@ -14,21 +14,16 @@
 
 /*Background:*/
 @mixin background-img ($background-img: $background-img-work) {
-    background-image: $background-img;
-	background-repeat: no-repeat;
-	position: absolute;
-	background-attachment: fixed;
-	background-size: 100%;
-	background-position: center 80px;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
+    background-image: url("../img/main-background.jpg");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: 100%;
+    background-position: center 80px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
-
-@mixin background-color {
-    background: $background;
-}
-
+    
 /*Layout:*/
 @mixin padding-width($width)  {
     width: $width;
@@ -54,6 +49,7 @@
 	overflow-x: clip;
 	margin: 0;
 	padding: 0;
+    background: $background;
 }
 
 /*Projet: */

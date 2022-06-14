@@ -1,15 +1,9 @@
 body {
 	@include body-layout;
-	
 }
 
 .page-background {
-	&--img {
 	@include background-img;
-	}
-	&--color {
-	@include background-color;
-	}
 }
 
 h1 {

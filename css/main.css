@@ -26,21 +26,18 @@ body {
   overflow-x: clip;
   margin: 0;
   padding: 0;
+  background: linear-gradient(to right, rgb(227, 227, 227), rgb(225, 227, 227) 20%, rgb(223, 223, 221) 50%, rgb(216, 216, 214) 75%, rgb(213, 213, 211) 100%);
 }
 
-.page-background--img {
+.page-background {
   background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
-  position: absolute;
-  background-attachment: fixed;
+  position: fixed;
   background-size: 100%;
   background-position: center 80px;
   height: 100%;
   width: 100%;
   z-index: -1;
-}
-.page-background--color {
-  background: linear-gradient(to right, rgb(227, 227, 227), rgb(225, 227, 227) 20%, rgb(223, 223, 221) 50%, rgb(216, 216, 214) 75%, rgb(213, 213, 211) 100%);
 }
 
 h1 {
